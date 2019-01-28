@@ -16,7 +16,7 @@ node{
 
     stage('Deploy'){ 
 
-        sh 'cp target/*.war /usr/local/tomcat9/webapps'
+        sh 'cp target/*.war /usr/local/apache-tomcat9/webapps'
 
     }
 
