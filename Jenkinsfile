@@ -19,15 +19,5 @@ node{
         sh 'cp target/*.war /usr/local/apache-tomcat9/webapps'
 
     }
-
-    stage('Email Notification'){
-
-      mail bcc:'', body:'''Hi Welcome to Jenkins alerts
-
-      Arjun Mishra''', cc:'', from:'', replyTo:'', subject:'Jenkins', to:'arjunmishra21dec@gmail.com'
-
-    }
-
     
-
 }
