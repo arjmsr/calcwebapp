@@ -2,7 +2,7 @@ node{
 
     stage('SCM Checkout'){
 
-        git ''
+        git 'https://github.com/arjmsr/calcwebapp.git'
 
     }
 
@@ -22,11 +22,9 @@ node{
 
     stage('Email Notification'){
 
-      mail bcc:'', body:'''Hi Welcome to Jenkins Pipeline alerts
+      mail bcc:'', body:'''Hi Welcome to Jenkins alerts
 
-      Thanks
-
-      M.Muniraja''', cc:'', from:'', replyTo:'', subject:'Jenkins Job', to:'mmuni1990@gmail.com'
+      Arjun Mishra''', cc:'', from:'', replyTo:'', subject:'Jenkins', to:'arjunmishra21dec@gmail.com'
 
     }
 
