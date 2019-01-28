@@ -1,12 +1,12 @@
 node{
 
-    stage('SCM Checkout'){
+    stage('Git Checkout'){
 
         git 'https://github.com/arjmsr/calcwebapp.git'
 
     }
 
-    stage('Compile Package'){
+    stage('Compile Test'){
 
         def mvnHome = tool name: 'MAVEN', type: 'maven'
 
@@ -14,7 +14,7 @@ node{
 
     }
 
-    stage('Deploy to Tomcat'){ 
+    stage('Deploy'){ 
 
         sh 'cp target/*.war /usr/local/tomcat9/webapps'
 
