@@ -8,7 +8,7 @@ node{
 
     stage('Compile Test'){
 
-        def mvnHome = tool name: 'MAVEN', type: 'maven'
+        def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
 
         sh "${mvnHome}/bin/mvn package"
 
